@@ -13,6 +13,11 @@
 		EF06EE852555D0AA00C68C7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF06EE842555D0AA00C68C7F /* Preview Assets.xcassets */; };
 		EF06EE872555D0AA00C68C7F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06EE862555D0AA00C68C7F /* Persistence.swift */; };
 		EF06EE8A2555D0AA00C68C7F /* Hatchy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EF06EE882555D0AA00C68C7F /* Hatchy.xcdatamodeld */; };
+		EF06EE952555DCC000C68C7F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06EE942555DCC000C68C7F /* User.swift */; };
+		EF06EE9F2558590100C68C7F /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06EE9E2558590100C68C7F /* Friend.swift */; };
+		EF06EEA22558595600C68C7F /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06EEA12558595600C68C7F /* Users.swift */; };
+		EF06EEA62558712E00C68C7F /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06EEA52558712E00C68C7F /* DetailView.swift */; };
+		EF06EEA92558732A00C68C7F /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF06EEA82558732A00C68C7F /* UserCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		EF06EE862555D0AA00C68C7F /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		EF06EE892555D0AA00C68C7F /* Hatchy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hatchy.xcdatamodel; sourceTree = "<group>"; };
 		EF06EE8B2555D0AA00C68C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF06EE942555DCC000C68C7F /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EF06EE9E2558590100C68C7F /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		EF06EEA12558595600C68C7F /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		EF06EEA52558712E00C68C7F /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		EF06EEA82558732A00C68C7F /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				EF06EE7D2555D0A800C68C7F /* HatchyApp.swift */,
-				EF06EE7F2555D0A800C68C7F /* ContentView.swift */,
+				EF06EE972555DCC400C68C7F /* Models */,
+				EF06EE922555DCA700C68C7F /* Views */,
 				EF06EE812555D0AA00C68C7F /* Assets.xcassets */,
 				EF06EE862555D0AA00C68C7F /* Persistence.swift */,
 				EF06EE8B2555D0AA00C68C7F /* Info.plist */,
@@ -73,6 +84,26 @@
 				EF06EE842555D0AA00C68C7F /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EF06EE922555DCA700C68C7F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EF06EE7F2555D0A800C68C7F /* ContentView.swift */,
+				EF06EEA82558732A00C68C7F /* UserCell.swift */,
+				EF06EEA52558712E00C68C7F /* DetailView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EF06EE972555DCC400C68C7F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EF06EE942555DCC000C68C7F /* User.swift */,
+				EF06EE9E2558590100C68C7F /* Friend.swift */,
+				EF06EEA12558595600C68C7F /* Users.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,9 +175,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF06EEA22558595600C68C7F /* Users.swift in Sources */,
+				EF06EEA62558712E00C68C7F /* DetailView.swift in Sources */,
 				EF06EE8A2555D0AA00C68C7F /* Hatchy.xcdatamodeld in Sources */,
+				EF06EE9F2558590100C68C7F /* Friend.swift in Sources */,
 				EF06EE872555D0AA00C68C7F /* Persistence.swift in Sources */,
+				EF06EEA92558732A00C68C7F /* UserCell.swift in Sources */,
 				EF06EE802555D0A800C68C7F /* ContentView.swift in Sources */,
+				EF06EE952555DCC000C68C7F /* User.swift in Sources */,
 				EF06EE7E2555D0A800C68C7F /* HatchyApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
